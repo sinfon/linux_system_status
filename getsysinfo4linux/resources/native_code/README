@@ -1,0 +1,6 @@
+
+使用如下语句生成libXXX.so库文件
+gcc \
+-I /usr/local/jdk1.8.0_60/include/ \ 
+-I /usr/local/jdk1.8.0_60/include/linux/ \
+tool_sysinfo_linux_disk_SyncDiskInfoJNI.c  -shared -o libSyncDiskInfoJNI.so -fPIC 

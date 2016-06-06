@@ -11,11 +11,11 @@ import java.io.InputStreamReader;
  * @author ZHJIE
  *
  */
-public class Handle4meminfo {
+public class Handler4meminfo {
 	private Snapshot4meminfo shot = new Snapshot4meminfo();
 	private final static String meminfoPath = "/proc/meminfo";
 	
-	public Handle4meminfo(boolean canInit) {
+	public Handler4meminfo(boolean canInit) {
 		if (canInit) {
 			setSnapshot();
 		}
